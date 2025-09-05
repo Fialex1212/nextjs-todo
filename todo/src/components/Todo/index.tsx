@@ -23,16 +23,17 @@ const Todo = () => {
     <div className="container">
       <div className={css.todos__container}>
         <form className={css.form} onSubmit={handleSubmit}>
-          <label className={css.input__wrapper}>
-            <input
-              className={css.input}
-              type="text"
-              placeholder="Create new task"
-              value={form.todo}
-              onChange={handleInputChange}
-              name="todo"
-            />
-          </label>
+          <input
+            className={css.input}
+            type="text"
+            placeholder="Create new task"
+            value={form.todo}
+            onChange={handleInputChange}
+            name="todo"
+          />
+          <button className={css.form__button} type="submit">
+            Add task
+          </button>
         </form>
         <ListTodo />
       </div>
