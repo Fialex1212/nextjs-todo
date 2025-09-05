@@ -1,0 +1,76 @@
+.todo {
+  position: relative;
+  background-color: #ffffff;
+  min-height: 44px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 10px 14px;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.todo__checkbox {
+  cursor: pointer;
+}
+
+.todo__title {
+  flex: 1;
+  text-align: left;
+  margin: 0 10px;
+  line-height: 1.4;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.button__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo__menu {
+  position: absolute;
+  top: 25px;
+  right: -70px;
+  background-color: #f9f9f9;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.menu__delete {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .todo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .todo__title {
+    text-align: left;
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .todo__menu {
+    right: 10px;
+    top: auto;
+    bottom: -50px;
+  }
+
+  .button__menu{
+    margin-left: 0px;
+  }
+}
